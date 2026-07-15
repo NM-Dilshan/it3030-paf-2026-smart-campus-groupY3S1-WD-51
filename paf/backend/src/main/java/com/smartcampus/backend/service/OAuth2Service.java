@@ -25,7 +25,7 @@ public class OAuth2Service {
     @Value("${spring.security.oauth2.client.registration.google.client-secret}")
     private String clientSecret;
     
-    @Value("${spring.security.oauth2.client.registration.google.redirect-uri:http://localhost:8081/api/auth/google/callback}")
+    @Value("${spring.security.oauth2.client.registration.google.redirect-uri:https://paf.vercel.app/api/auth/google/callback}")
     private String redirectUri;
     
     private final UserRepository userRepository;
